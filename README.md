@@ -1,4 +1,4 @@
-Technologies Used
+Technologies Used:
 
 React with TypeScript – for component-based UI development
 
