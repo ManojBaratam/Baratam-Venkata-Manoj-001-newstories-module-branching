@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-violet: #8E24AA;
+  --color-amber: #FFB300;
+  --color-offwhite: #FAFAFA;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: var(--color-offwhite);
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.drop-cap::first-letter {
+  font-family: 'Playfair Display', serif;
+  float: left;
+  font-size: 4rem;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+  color: var(--color-violet);
+}
+
+.story-card {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.branch-button {
+  transition: all 0.3s ease;
+}
+
+.branch-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(142, 36, 170, 0.2);
+}
